@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm-Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens:{
+                sm:'480px',
+                md:'768px',
+                lg:'976px',
+                xl:'1440px'
+            },
+            extend: {
+              colors: {
+                paytmSkyBlue: "#00baf2",
+                paytmDarkBlue: "#0f4a8a",
+                paytmBlack: "#101010",
+                paytmwhite:"#fff"
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-[poppins]">
+    <header class="text-gray-600 body-font bg-paytmwhite">
+        <div class="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 ml-4 md:mb-0">
+            <img src="img/paytm_logo.png" alt="" class="w-15 h-12">
+            
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900">Paytm for consumer</a>
+            <a class="mr-5 hover:text-gray-900">Paytm for Bussiness</a>
+            <a class="mr-5 hover:text-gray-900">Company</a>
+            <a class="mr-5 hover:text-gray-900">Investors Relation</a>
+            <a class="mr-5 hover:text-gray-900">Carrer</a>
+          </nav>
+          <button class="inline-flex items-center bg-paytmSkyBlue border-0 py-1 px-3 focus:outline-none hover:bg-red-500 rounded text-base mt-4 md:mt-0">SIGN IN
+            
+          </button>
+        </div>
+    </header>
+
+
+
+
+    <section class="text-gray-600 body-font bg-paytmwhite">
+        <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <img src="img/paytm_to_upi.png" alt="" class="w-15 h-20 mb-4">
+            <h1 class="title-font sm:text-6xl text-4xl mb-4 font-medium text-gray-900">India's Most-Loved
+              <br class="hidden lg:inline-block">Payment App
+            </h1>
+            <p class="mb-8 leading-relaxed">Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-400 rounded text-lg">Download paytm App</button>
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="img/1626077030984.webp">
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="text-gray-600 body-font">
+        <div class="px-5 py-24 mx-auto bg-paytmSkyBlue">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-3xl font-medium title-font mb-4 text-gray-100">Recharge & Pay Bills on Paytm</h1>
+            
+          </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-14 h-15 object-cover object-center mb-4 ml-6" src="img/recharge1.png">
+                        <h2 class="title-font ml-6 font-medium text-2xl text-gray-100">Recharge<br> Prepaid<br> Plan</h2>
+                                    
+                    </div>
+                
+                </div>
+
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center ml-6">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-14 h-15 object-cover object-center mb-4 ml-8" src="img/rent2.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100 justify-center">Pay<br> Rent<br> Payment</h2>
+                    
+                    
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-14 h-15 object-cover object-center mb-4 ml-8" src="img/electricity3.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100">Pay<br> Electricity<br> Bill</h2>
+                
+                    
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-14 h-15 object-cover object-center mb-4 ml-8" src="img/dth4.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100">Recharge <br> DTH <br> Connection</h2>
+                
+                    
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-12 h-15 object-cover object-center mb-4 ml-8" src="img/cylinder5.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100">Book <br>Gas<br> Cylinder</h2>
+                
+                    
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-12 h-15 object-cover object-center mb-4 ml-8" src="img/credit6.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100">Pay <br> Credit <br>Cards Bills</h2>
+                
+                    
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-12 h-15 object-cover object-center mb-4 ml-6" src="img/cylinder5.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100">All <br> services <br> Center</h2>
+                
+                    
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="text-gray-600 body-font">
+        <div class="px-5 py-24 mx-auto bg-paytmDarkBlue">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-3xl font-medium title-font mb-4 text-gray-100">Recharge & Pay Bills on Paytm</h1>
+            
+          </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-14 h-15 object-cover object-center mb-4 ml-6" src="img/recharge1.png">
+                        <h2 class="title-font ml-6 font-medium text-2xl text-gray-100">Recharge<br> Prepaid<br> Plan</h2>
+                                    
+                    </div>
+                
+                </div>
+
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center ml-6">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-14 h-15 object-cover object-center mb-4 ml-8" src="img/rent2.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100 justify-center">Pay<br> Rent<br> Payment</h2>
+                    
+                    
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-14 h-15 object-cover object-center mb-4 ml-8" src="img/electricity3.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100">Pay<br> Electricity<br> Bill</h2>
+                
+                    
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-14 h-15 object-cover object-center mb-4 ml-8" src="img/dth4.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100">Recharge <br> DTH <br> Connection</h2>
+                
+                    
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-12 h-15 object-cover object-center mb-4 ml-8" src="img/cylinder5.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100">Book <br>Gas<br> Cylinder</h2>
+                
+                    
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-12 h-15 object-cover object-center mb-4 ml-8" src="img/credit6.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100">Pay <br> Credit <br>Cards Bills</h2>
+                
+                    
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="p-4">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-12 h-15 object-cover object-center mb-4 ml-6" src="img/cylinder5.png">
+                        <div class="w-full">
+                            <h2 class="title-font ml-10 font-medium text-2xl text-gray-100">All <br> services <br> Center</h2>
+                
+                    
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class=" container m-10 ml-20">
+            <h1 class="text-5xl text-gray-800">Paytm payment Instruments</h1>
+
+        </div>
+      </section>
+
+
+
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-paytmwhite">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div class="flex flex-row ml-4">
+                <img src="img/paytm_wallet.png" alt="" class="h-15 w-14">
+                <p class="mt-5">Paytm<br>Wallet</p>
+            </div>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-5">The Fastest Way to
+              <br class="hidden lg:inline-block">Pay In-store and Online.
+            </h1>
+            <p class="mb-8 leading-relaxed">Load your paytm wallet for free and make payments in a jiffy at over 21 million stores,websites and apps. </p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-300 rounded text-lg">Download the APP</button>
+              
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="img/haldiram.webp">
+          </div>
+        </div>
+      </section>
+
+
+
+
+      
+      <section class="text-gray-600 body-font mt-8">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-paytmwhite">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div class="flex flex-row ml-4">
+                <img src="img/upi_money.png" alt="" class="h-15 w-14">
+                <p class="mt-5">UPI<br>Money<br>Transfer</p>
+            </div>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-5">Pay Anyone Directly
+              <br class="hidden lg:inline-block">from your bank account
+            </h1>
+            <p class="mb-8 leading-relaxed">Pay anyone, everywhere. Make contactless and secure
+            payments in-store and online using paytm wallet or
+            Directly from your bank account. Plus send & receive
+            money from anyone.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-400 rounded text-lg">Download the App</button>
+              
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="img/1626342071104.webp">
+          </div>
+        </div>
+      </section>
+
+
+
+
+      
+      <section class="text-gray-600 body-font mt-8">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-paytmwhite">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div class="flex flex-row ml-4">
+                <img src="img/postpaid.webp" alt="" class="">
+                
+            </div>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-5">Want it ?
+              <br class="hidden lg:inline-block">No more waiting for it.
+            </h1>
+            <p class="mb-8 leading-relaxed">With paytm postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things youwant today and pay for them next month.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-300 rounded text-lg">Learn More</button>
+              
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="img/1626077030984.webp">
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      
+      <section class="text-gray-600 body-font mt-8">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-gray-100">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div class="flex flex-row ml-4">
+                <img src="img/postpaid.webp" alt="" class="">
+                
+            </div>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-5">Want it ?
+              <br class="hidden lg:inline-block">No more waiting for it.
+            </h1>
+            <p class="mb-8 leading-relaxed">With paytm postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things youwant today and pay for them next month.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-300 rounded text-lg">Learn More</button>
+              
+            </div>
+          </div>
+
+
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div class="flex flex-row ml-4">
+                <img src="img/postpaid.webp" alt="" class="">
+                
+            </div>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-5">Want it ?
+              <br class="hidden lg:inline-block">No more waiting for it.
+            </h1>
+            <p class="mb-8 leading-relaxed">With paytm postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things youwant today and pay for them next month.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-300 rounded text-lg">Learn More</button>
+              
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+        
+      <section class="text-gray-600 body-font mt-8 bg-paytmwhite">
+        <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-paytmwhite">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-100 ml-10 text-gray-900 text-bold">FINANCIAL SERVICES BY PAYTM</h1>
+            
+            <div class="flex flex-row ml-4">
+                <img src="img/paytm-bank.png" alt="" class="mt-10 ml-10 w-13 h-10">
+                
+            </div>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-10 ml-10">INDIA"S most sincere bank.
+              <br class="hidden lg:inline-block">
+            </h1>
+            <p class="mb-8 leading-relaxed ml-10 mt-5">Paytm bank offers most secure transperant and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, expering the future of banking today.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-900 border-0 py-4 px-6 focus:outline-none hover:bg-indigo-500 rounded text-lg mt-10 ml-10">Learn More</button>
+              
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="img/paytm-bank-image.webp">
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      <section class="text-gray-600 body-font">
+        <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="img/paytm-money-image.webp">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <img src="img/paytm-money.webp" alt="" class="w-13 h-12">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-10">Build Lomg Term
+              <br class="hidden lg:inline-block">wealth and acheive your goals.
+            </h1>
+            <p class="mb-8 leading-relaxed">Investing on paytm money is transperant lo-cost and commision-free. Buy stocks and mutual funds that can help you create wealth and realises your dreams.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-500 rounded text-lg">Learn MORE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      
+      <section class="text-gray-600 body-font mt-8 bg-paytmwhite">
+        <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-paytmwhite">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        
+            <div class="flex flex-row ml-4">
+                <img src="img/paytm-insurance.webp" alt="" class="mt-10 ml-10 w-13 h-10">
+                
+            </div>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-10 ml-10">Insurance Made Easy
+              <br class="hidden lg:inline-block">
+            </h1>
+            <p class="mb-8 leading-relaxed ml-10 mt-5">Buying insurance does not have to be tedious, time-consuming and confusing. Paytm insurance removes the worry of getting insured by making it simple, convenient and easy-to-understand.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-900 border-0 py-4 px-6 focus:outline-none hover:bg-indigo-500 rounded text-lg mt-10 ml-10">Learn More</button>
+              
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="img/insurance-image.webp">
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      
+      <section class="text-gray-600 body-font">
+        <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="img/loan-image.webp">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <img src="img/perosal-loan.png" alt="" class="w-13 h-12">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-10">Get a personal loan in
+              <br class="hidden lg:inline-block">2 minutes
+            </h1>
+            <p class="mb-8 leading-relaxed">Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% transperant digital and paperless.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-500 rounded text-lg">Learn MORE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="text-gray-900 bg-paytmwhite">
+        <h1 class="text-6xl mt-8 ml-20 pb-6 pt-6">Bussiness services by Paytm</h1>
+      </section>
+
+
+
+
+
+
+            
+      <section class="text-gray-600 body-font mt-4">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-paytmwhite">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                  
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-10 ml-10">Accept payment online
+              <br class="hidden lg:inline-block">with ease.
+            </h1>
+            <p class="mb-8 leading-relaxed ml-10 mt-5">Grow your Bussiness with the payment gateway taht powers India's largest brands and even the paytm app.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-900 border-0 py-4 px-6 focus:outline-none hover:bg-indigo-500 rounded text-lg mt-10 ml-10">Learn More</button>
+              
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="img/2items.webp">
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      
+
+            
+      <section class="text-gray-600 body-font mt-4">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-paytmwhite">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                  
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-10 ml-10">In shop payment 
+              <br class="hidden lg:inline-block">powered by paytm.
+            </h1>
+            <p class="mb-8 leading-relaxed ml-10 mt-5">Millions of small bussiness use paytm to accept payment anywhere any time with a wide range of solutions for all kinds of merchants.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-900 border-0 py-4 px-6 focus:outline-none hover:bg-indigo-500 rounded text-lg mt-10 ml-10">Learn More</button>
+              
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="img/2items.webp">
+          </div>
+        </div>
+      </section>
+
+
+
+      <section>
+        <h1 class="text-6xl mt-8 ml-20 text-gray-900">Bussiness Tools to help <br> your bussiness grow.</h1>
+      </section>
+
+
+
+
+
+
+      <section class="text-gray-600 body-font">
+        <div class="px-5 py-24 mx-auto">
+          
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="img/pos.webp">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-4xl text-gray-900">Pos Billing</h2>
+                  <h3 class="text-gray-900 text-4xl mb-3">Software</h3>
+                  <p class="mb-4">Say hello to smart Retail Bussiness Management</p>
+                  <p>Learn More</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="img/bussi-app.webp">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-4xl text-gray-900">Payment for</h2>
+                  <h3 class="text-gray-900 text-4xl mb-3">Bussiness App</h3>
+                  <p class="mb-4">Everything you need to manage your bussiness on phone</p>
+                  <p>Learn More</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="img/ad-pay.webp">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-4xl text-gray-900">Advertise your</h2>
+                  <h3 class="text-gray-900 text-4xl mb-3">Paytm</h3>
+                  <p class="mb-4">Grow your bussiness by advertiseing on India's largest mobile bussiness</p>
+                  <p>Learn More</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="img/khata.webp">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-4xl text-gray-900">Bussiness</h2>
+                  <h3 class="text-gray-900 text-4xl mb-3">khata</h3>
+                  <p class="mb-4">Managing Khata made Easy</p>
+                  <p>Learn More</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto bg-paytmwhite">
+          
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/5 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="w-15 h-12" src="img/paytm money.webp">
+                <div class="w-full">
+                
+                  <h3 class="text-gray-900 mt-10 mb-3">Get started on wealth creation journey with zero brokerage fee and no hidden charges.</h3>
+                  <p class="mb-4 mt-4">Learn More</p>
+                  
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="p-4 lg:w-1/5 md:w-1/2">
+              <div class="h-56 flex flex-col items-center text-center bg-paytmSkyBlue">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center mb-4 pt-6" src="img/pay-money1.webp">
+                <h1 class="text-2xl text-paytmwhite">Invest In Stocks</h1>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/5 md:w-1/2">
+              <div class="h-56 flex flex-col items-center text-center bg-paytmSkyBlue">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center mb-4 pt-6" src="img/pay-money2.webp">
+                <h1 class="text-2xl text-paytmwhite">Apply For IPO</h1>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/5 md:w-1/2">
+              <div class="h-56 flex flex-col items-center text-center bg-paytmSkyBlue">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center mb-4 pt-6" src="img/pay-money3.webp">
+                <h1 class="text-2xl text-paytmwhite">Invest In ETH's</h1>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/5 md:w-1/2">
+              <div class="h-56 flex flex-col items-center text-center bg-paytmSkyBlue">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center mb-4 pt-6" src="img/pay-money4.webp">
+                <h1 class="text-2xl text-paytmwhite">Buy Gold</h1>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      
+      <section class="text-gray-600 body-font mt-6">
+        <div class="container px-5 py-24 mx-auto bg-paytmwhite">
+          
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/5 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="w-15 h-12" src="img/paytm-travel.webp">
+                <div class="w-full">
+                
+                  <h3 class="text-gray-900 mt-10 mb-3">Best travel solutions with quick ticket bookings, great offers and easy refunds.</h3>
+                  <p class="mb-4 mt-4">Learn More</p>
+                  
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="p-4 lg:w-1/5 md:w-1/2">
+              <div class="h-72 flex flex-col items-center text-center bg-paytmSkyBlue">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-30 h-36 object-cover object-center mb-4 pt-6" src="img/travel1.webp">
+                <h1 class="text-2xl text-paytmwhite">Flat 10% cashback</h1>
+                <h3 class="text-paytmwhite">With code Welcomeflight</h3>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/5 md:w-1/2">
+              <div class="h-72 flex flex-col items-center text-center bg-paytmSkyBlue">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-30 h-36 object-cover object-center mb-4 pt-6" src="img/travel2.webp">
+                <h1 class="text-2xl text-paytmwhite">100% Refund </h1>
+                <h3 class="text-paytmwhite">With Payment Cancellation Protect</h3>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/5 md:w-1/2">
+              <div class="h-72 flex flex-col items-center text-center bg-paytmSkyBlue">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-30 h-36 object-cover object-center mb-4 pt-6" src="img/travel3.webp">
+                <h1 class="text-2xl text-paytmwhite">Flat 10% Cashback</h1>
+                <h3 class="text-paytmwhite">With Code HAPPYBUS</h3>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/5 md:w-1/2">
+              <div class="h-72 flex flex-col items-center text-center bg-paytmSkyBlue">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-30 h-36 object-cover object-center mb-4 pt-6" src="img/travel4.webp">
+                <h1 class="text-2xl text-paytmwhite">Sanitised Bus Options <br>With Travelsafe+</h1>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      <footer class="text-gray-600 body-font">
+        <div class="px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <span class="ml-3 text-xl">
+            <h1 class="text-gray-900 text-4xl">Download Paytm App<br>To Pay From Anywhere</h1>
+          </span>
+          <a class="flex md:flex-col title-font font-medium items-center md:justify-start justify-center text-gray-900 ml-6">
+            <svg width="160" height="53" viewBox="0 0 160 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.333496 12.6477C0.333496 8.71899 0.333496 6.75463 0.97533 5.2051C1.83111 3.13907 3.47256 1.49761 5.5386 0.641834C7.08812 0 9.05249 0 12.9812 0H146.686C150.615 0 152.579 0 154.128 0.641834C156.194 1.49761 157.836 3.13907 158.692 5.2051C159.333 6.75463 159.333 8.71899 159.333 12.6477V40.3523C159.333 44.281 159.333 46.2454 158.692 47.7949C157.836 49.8609 156.194 51.5024 154.128 52.3582C152.579 53 150.615 53 146.686 53H12.9812C9.05249 53 7.08812 53 5.5386 52.3582C3.47256 51.5024 1.83111 49.8609 0.97533 47.7949C0.333496 46.2454 0.333496 44.281 0.333496 40.3523V12.6477Z" fill="#0C0D10"/>
+              <path d="M108.355 25.4415V28.4771H106.453V30.4678H108.355V37.2319C108.355 39.5416 109.4 40.4655 112.029 40.4655C112.491 40.4655 112.931 40.4105 113.316 40.3445V38.3757C112.986 38.4087 112.777 38.4307 112.414 38.4307C111.237 38.4307 110.72 37.8808 110.72 36.627V30.4678H113.316V28.4771H110.72V25.4415H108.355Z" fill="white"/>
+              <path d="M120.012 40.6304C123.51 40.6304 125.654 38.2878 125.654 34.4053C125.654 30.5448 123.499 28.1911 120.012 28.1911C116.514 28.1911 114.359 30.5448 114.359 34.4053C114.359 38.2878 116.503 40.6304 120.012 40.6304ZM120.012 38.5297C117.955 38.5297 116.8 37.0229 116.8 34.4053C116.8 31.8096 117.955 30.2918 120.012 30.2918C122.058 30.2918 123.224 31.8096 123.224 34.4053C123.224 37.0119 122.058 38.5297 120.012 38.5297Z" fill="white"/>
+              <path d="M127.489 40.3995H129.854V33.3274C129.854 31.6446 131.119 30.5118 132.912 30.5118C133.329 30.5118 134.033 30.5888 134.231 30.6548V28.3231C133.978 28.2571 133.527 28.2241 133.175 28.2241C131.614 28.2241 130.283 29.082 129.942 30.2588H129.766V28.4221H127.489V40.3995Z" fill="white"/>
+              <path d="M140.103 30.2038C141.852 30.2038 142.995 31.4247 143.05 33.3054H137.001C137.133 31.4357 138.354 30.2038 140.103 30.2038ZM143.039 37.1659C142.599 38.1008 141.621 38.6177 140.191 38.6177C138.299 38.6177 137.078 37.2869 137.001 35.1862V35.0542H145.459V34.2293C145.459 30.4678 143.446 28.1911 140.114 28.1911C136.737 28.1911 134.593 30.6218 134.593 34.4493C134.593 38.2768 136.693 40.6304 140.125 40.6304C142.863 40.6304 144.777 39.3106 145.316 37.1659H143.039Z" fill="white"/>
+              <path d="M92.848 35.9764C93.0304 38.9175 95.4814 40.7985 99.1293 40.7985C103.028 40.7985 105.467 38.8263 105.467 35.68C105.467 33.2063 104.077 31.8383 100.702 31.0518L98.8899 30.6072C96.7467 30.1056 95.8804 29.433 95.8804 28.2588C95.8804 26.7769 97.2255 25.8079 99.2433 25.8079C101.158 25.8079 102.481 26.7541 102.72 28.2702H105.205C105.057 25.5001 102.618 23.5508 99.2775 23.5508C95.6866 23.5508 93.2926 25.5001 93.2926 28.4298C93.2926 30.8466 94.6492 32.2829 97.6245 32.9783L99.7448 33.4913C101.922 34.0043 102.88 34.7566 102.88 36.0106C102.88 37.4698 101.375 38.5299 99.3231 38.5299C97.1229 38.5299 95.5954 37.5382 95.3788 35.9764H92.848Z" fill="white"/>
+              <path d="M68.3523 28.2241C66.7245 28.2241 65.3167 29.038 64.5908 30.4018H64.4148V28.4221H62.1381V44.3809H64.5028V38.5847H64.6898C65.3167 39.8496 66.6695 40.5975 68.3743 40.5975C71.3989 40.5975 73.3237 38.2108 73.3237 34.4053C73.3237 30.5998 71.3989 28.2241 68.3523 28.2241ZM67.6814 38.4747C65.7017 38.4747 64.4588 36.9129 64.4588 34.4163C64.4588 31.9086 65.7017 30.3468 67.6924 30.3468C69.6941 30.3468 70.893 31.8756 70.893 34.4053C70.893 36.9459 69.6941 38.4747 67.6814 38.4747Z" fill="white"/>
+              <path d="M81.5981 28.2241C79.9703 28.2241 78.5625 29.038 77.8366 30.4018H77.6606V28.4221H75.3839V44.3809H77.7486V38.5847H77.9356C78.5625 39.8496 79.9153 40.5975 81.6201 40.5975C84.6447 40.5975 86.5694 38.2108 86.5694 34.4053C86.5694 30.5998 84.6447 28.2241 81.5981 28.2241ZM80.9272 38.4747C78.9474 38.4747 77.7046 36.9129 77.7046 34.4163C77.7046 31.9086 78.9474 30.3468 80.9382 30.3468C82.9399 30.3468 84.1387 31.8756 84.1387 34.4053C84.1387 36.9459 82.9399 38.4747 80.9272 38.4747Z" fill="white"/>
+              <path d="M57.8955 40.3995H60.6086L54.6694 23.9498H51.9221L45.9829 40.3995H48.6048L50.1209 36.0334H56.3907L57.8955 40.3995ZM53.1646 26.9365H53.3584L55.741 33.8903H50.7707L53.1646 26.9365Z" fill="white"/>
+              <path d="M47.5712 11.5418V19.4773H50.4364C52.801 19.4773 54.1704 18.02 54.1704 15.4848C54.1704 12.9881 52.79 11.5418 50.4364 11.5418H47.5712ZM48.8031 12.6637H50.2989C51.9432 12.6637 52.9165 13.7085 52.9165 15.5013C52.9165 17.3215 51.9597 18.3554 50.2989 18.3554H48.8031V12.6637Z" fill="white"/>
+              <path d="M58.3641 19.5927C60.1129 19.5927 61.1852 18.4214 61.1852 16.4802C61.1852 14.5499 60.1074 13.3731 58.3641 13.3731C56.6153 13.3731 55.5375 14.5499 55.5375 16.4802C55.5375 18.4214 56.6098 19.5927 58.3641 19.5927ZM58.3641 18.5424C57.3357 18.5424 56.7583 17.789 56.7583 16.4802C56.7583 15.1823 57.3357 14.4234 58.3641 14.4234C59.387 14.4234 59.9699 15.1823 59.9699 16.4802C59.9699 17.7835 59.387 18.5424 58.3641 18.5424Z" fill="white"/>
+              <path d="M70.3173 13.4886H69.135L68.0681 18.0584H67.9746L66.7428 13.4886H65.6099L64.3781 18.0584H64.2901L63.2178 13.4886H62.0189L63.6687 19.4773H64.884L66.1159 15.0668H66.2094L67.4467 19.4773H68.673L70.3173 13.4886Z" fill="white"/>
+              <path d="M71.6789 19.4773H72.8613V15.9742C72.8613 15.0393 73.4167 14.4564 74.2911 14.4564C75.1655 14.4564 75.5834 14.9349 75.5834 15.8972V19.4773H76.7657V15.6003C76.7657 14.176 76.0288 13.3731 74.6925 13.3731C73.7906 13.3731 73.1967 13.7745 72.9053 14.4399H72.8173V13.4886H71.6789V19.4773Z" fill="white"/>
+              <path d="M78.6278 19.4773H79.8101V11.1514H78.6278V19.4773Z" fill="white"/>
+              <path d="M84.2569 19.5927C86.0056 19.5927 87.078 18.4214 87.078 16.4802C87.078 14.5499 86.0001 13.3731 84.2569 13.3731C82.5081 13.3731 81.4302 14.5499 81.4302 16.4802C81.4302 18.4214 82.5026 19.5927 84.2569 19.5927ZM84.2569 18.5424C83.2285 18.5424 82.6511 17.789 82.6511 16.4802C82.6511 15.1823 83.2285 14.4234 84.2569 14.4234C85.2797 14.4234 85.8626 15.1823 85.8626 16.4802C85.8626 17.7835 85.2797 18.5424 84.2569 18.5424Z" fill="white"/>
+              <path d="M90.6008 18.5809C89.9574 18.5809 89.49 18.2674 89.49 17.7285C89.49 17.2006 89.8639 16.9201 90.6888 16.8651L92.1516 16.7716V17.2721C92.1516 18.0145 91.4917 18.5809 90.6008 18.5809ZM90.2983 19.5762C91.0847 19.5762 91.7392 19.2353 92.0966 18.6359H92.1901V19.4773H93.3284V15.3858C93.3284 14.121 92.4816 13.3731 90.9803 13.3731C89.6219 13.3731 88.6541 14.033 88.5331 15.0613H89.6769C89.8089 14.6379 90.2654 14.3959 90.9253 14.3959C91.7337 14.3959 92.1516 14.7534 92.1516 15.3858V15.9027L90.5293 15.9962C89.105 16.0842 88.3021 16.7056 88.3021 17.7835C88.3021 18.8778 89.1435 19.5762 90.2983 19.5762Z" fill="white"/>
+              <path d="M97.3407 19.5762C98.1656 19.5762 98.864 19.1858 99.2215 18.5314H99.3149V19.4773H100.448V11.1514H99.2655V14.4399H99.1775C98.853 13.78 98.1601 13.3896 97.3407 13.3896C95.8284 13.3896 94.855 14.5884 94.855 16.4802C94.855 18.3774 95.8174 19.5762 97.3407 19.5762ZM97.6762 14.4509C98.666 14.4509 99.2875 15.2373 99.2875 16.4857C99.2875 17.7395 98.6715 18.5149 97.6762 18.5149C96.6753 18.5149 96.0759 17.7505 96.0759 16.4802C96.0759 15.2208 96.6808 14.4509 97.6762 14.4509Z" fill="white"/>
+              <path d="M108.115 19.5927C109.864 19.5927 110.936 18.4214 110.936 16.4802C110.936 14.5499 109.858 13.3731 108.115 13.3731C106.366 13.3731 105.288 14.5499 105.288 16.4802C105.288 18.4214 106.361 19.5927 108.115 19.5927ZM108.115 18.5424C107.087 18.5424 106.509 17.789 106.509 16.4802C106.509 15.1823 107.087 14.4234 108.115 14.4234C109.138 14.4234 109.721 15.1823 109.721 16.4802C109.721 17.7835 109.138 18.5424 108.115 18.5424Z" fill="white"/>
+              <path d="M112.501 19.4773H113.683V15.9742C113.683 15.0393 114.239 14.4564 115.113 14.4564C115.988 14.4564 116.406 14.9349 116.406 15.8972V19.4773H117.588V15.6003C117.588 14.176 116.851 13.3731 115.515 13.3731C114.613 13.3731 114.019 13.7745 113.727 14.4399H113.639V13.4886H112.501V19.4773Z" fill="white"/>
+              <path d="M123.033 11.9983V13.5161H122.082V14.5114H123.033V17.8935C123.033 19.0483 123.556 19.5103 124.87 19.5103C125.101 19.5103 125.321 19.4828 125.513 19.4498V18.4654C125.348 18.4819 125.244 18.4929 125.063 18.4929C124.474 18.4929 124.216 18.2179 124.216 17.591V14.5114H125.513V13.5161H124.216V11.9983H123.033Z" fill="white"/>
+              <path d="M127.101 19.4773H128.283V15.9797C128.283 15.0723 128.822 14.4619 129.79 14.4619C130.626 14.4619 131.071 14.9459 131.071 15.9027V19.4773H132.253V15.6113C132.253 14.187 131.467 13.3786 130.191 13.3786C129.289 13.3786 128.657 13.78 128.365 14.4509H128.272V11.1514H127.101V19.4773Z" fill="white"/>
+              <path d="M136.519 14.3794C137.393 14.3794 137.965 14.9899 137.992 15.9302H134.968C135.034 14.9954 135.644 14.3794 136.519 14.3794ZM137.987 17.8605C137.767 18.3279 137.277 18.5864 136.563 18.5864C135.617 18.5864 135.006 17.921 134.968 16.8706V16.8046H139.197V16.3922C139.197 14.5114 138.19 13.3731 136.524 13.3731C134.836 13.3731 133.763 14.5884 133.763 16.5022C133.763 18.4159 134.814 19.5927 136.53 19.5927C137.899 19.5927 138.856 18.9328 139.125 17.8605H137.987Z" fill="white"/>
+              <path d="M33.1524 26.8987C33.1811 24.6713 34.3773 22.5638 36.2749 21.3972C35.0778 19.6875 33.0727 18.6035 30.9866 18.5383C28.7616 18.3047 26.6045 19.8697 25.4707 19.8697C24.315 19.8697 22.5693 18.5614 20.6895 18.6001C18.2392 18.6793 15.9549 20.0724 14.7628 22.2145C12.2003 26.6512 14.1117 33.1716 16.5664 36.7579C17.7946 38.5139 19.2299 40.4755 21.108 40.406C22.9459 40.3298 23.6323 39.234 25.8507 39.234C28.0486 39.234 28.6926 40.406 30.6088 40.3618C32.5809 40.3297 33.8234 38.5979 35.0085 36.8251C35.8909 35.5739 36.5699 34.1909 37.0204 32.7276C34.7028 31.7473 33.1551 29.415 33.1524 26.8987Z" fill="white"/>
+              <path d="M29.533 16.1798C30.6082 14.8889 31.138 13.2298 31.0097 11.5547C29.3669 11.7272 27.8494 12.5124 26.7597 13.7537C25.694 14.9665 25.1394 16.5964 25.2442 18.2075C26.8876 18.2244 28.5032 17.4606 29.533 16.1798Z" fill="white"/>
+              <path d="M5.5386 52.3582L5.07764 53.471L5.5386 52.3582ZM0.97533 47.7949L-0.137525 48.2559L0.97533 47.7949ZM158.692 47.7949L159.805 48.2559L158.692 47.7949ZM154.128 52.3582L153.667 51.2453L154.128 52.3582ZM154.128 0.641834L153.667 1.75469L154.128 0.641834ZM158.692 5.2051L159.805 4.74414L158.692 5.2051ZM5.5386 0.641834L5.99956 1.75469L5.5386 0.641834ZM12.9812 1.20455H146.686V-1.20455H12.9812V1.20455ZM158.129 12.6477V40.3523H160.538V12.6477H158.129ZM146.686 51.7955H12.9812V54.2045H146.686V51.7955ZM1.53804 40.3523V12.6477H-0.871049V40.3523H1.53804ZM12.9812 51.7955C11.0004 51.7955 9.57506 51.7948 8.4497 51.718C7.33516 51.642 6.60308 51.4953 5.99956 51.2453L5.07764 53.471C6.02363 53.8629 7.04851 54.0371 8.28571 54.1215C9.5121 54.2052 11.0333 54.2045 12.9812 54.2045V51.7955ZM-0.871049 40.3523C-0.871049 42.3002 -0.871702 43.8214 -0.788026 45.0478C-0.703612 46.285 -0.52937 47.3099 -0.137525 48.2559L2.08818 47.3339C1.8382 46.7304 1.69152 45.9983 1.61548 44.8838C1.53869 43.7584 1.53804 42.3331 1.53804 40.3523H-0.871049ZM5.99956 51.2453C4.22867 50.5118 2.82171 49.1048 2.08818 47.3339L-0.137525 48.2559C0.840508 50.617 2.71646 52.493 5.07764 53.471L5.99956 51.2453ZM158.129 40.3523C158.129 42.3331 158.128 43.7584 158.052 44.8838C157.975 45.9983 157.829 46.7304 157.579 47.3339L159.805 48.2559C160.196 47.3099 160.371 46.285 160.455 45.0478C160.539 43.8214 160.538 42.3002 160.538 40.3523H158.129ZM146.686 54.2045C148.634 54.2045 150.155 54.2052 151.381 54.1215C152.618 54.0371 153.643 53.8629 154.589 53.471L153.667 51.2453C153.064 51.4953 152.332 51.642 151.217 51.718C150.092 51.7948 148.667 51.7955 146.686 51.7955V54.2045ZM157.579 47.3339C156.845 49.1048 155.438 50.5118 153.667 51.2453L154.589 53.471C156.951 52.493 158.826 50.617 159.805 48.2559L157.579 47.3339ZM146.686 1.20455C148.667 1.20455 150.092 1.2052 151.217 1.28198C152.332 1.35803 153.064 1.5047 153.667 1.75469L154.589 -0.471021C153.643 -0.862866 152.618 -1.03711 151.381 -1.12152C150.155 -1.2052 148.634 -1.20455 146.686 -1.20455V1.20455ZM160.538 12.6477C160.538 10.6998 160.539 9.1786 160.455 7.95222C160.371 6.71501 160.196 5.69014 159.805 4.74414L157.579 5.66606C157.829 6.26959 157.975 7.00166 158.052 8.11621C158.128 9.24157 158.129 10.6669 158.129 12.6477H160.538ZM153.667 1.75469C155.438 2.48821 156.845 3.89518 157.579 5.66606L159.805 4.74414C158.826 2.38296 156.951 0.507012 154.589 -0.471021L153.667 1.75469ZM12.9812 -1.20455C11.0333 -1.20455 9.5121 -1.2052 8.28571 -1.12152C7.04851 -1.03711 6.02363 -0.862866 5.07764 -0.471021L5.99956 1.75469C6.60308 1.5047 7.33516 1.35803 8.4497 1.28198C9.57506 1.2052 11.0004 1.20455 12.9812 1.20455V-1.20455ZM1.53804 12.6477C1.53804 10.6669 1.53869 9.24157 1.61548 8.11621C1.69152 7.00166 1.8382 6.26959 2.08818 5.66606L-0.137525 4.74414C-0.52937 5.69014 -0.703612 6.71501 -0.788026 7.95222C-0.871702 9.1786 -0.871049 10.6998 -0.871049 12.6477H1.53804ZM5.07764 -0.471021C2.71646 0.507012 0.840508 2.38296 -0.137525 4.74414L2.08818 5.66606C2.82171 3.89518 4.22867 2.48821 5.99956 1.75469L5.07764 -0.471021Z" fill="#A6A6A6"/>
+              </svg>
+            
+          </a>
+          <a href="#" class="">
+            <svg width="179" height="53" viewBox="0 0 179 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 6.02273C0 2.69647 2.69647 0 6.02273 0H172.852C176.179 0 178.875 2.69647 178.875 6.02273V46.9773C178.875 50.3035 176.179 53 172.852 53H6.02272C2.69646 53 0 50.3035 0 46.9773V6.02273Z" fill="black"/>
+              <path d="M90.2802 28.8204C87.1638 28.8204 84.6238 31.1909 84.6238 34.4557C84.6238 37.7006 87.1638 40.0909 90.2802 40.0909C93.3979 40.0909 95.9379 37.7006 95.9379 34.4557C95.9366 31.1909 93.3966 28.8204 90.2802 28.8204ZM90.2802 37.8728C88.5723 37.8728 87.1002 36.4644 87.1002 34.457C87.1002 32.4284 88.5736 31.0411 90.2802 31.0411C91.9881 31.0411 93.4602 32.4284 93.4602 34.457C93.4602 36.463 91.9881 37.8728 90.2802 37.8728ZM77.9391 28.8204C74.8227 28.8204 72.2827 31.1909 72.2827 34.4557C72.2827 37.7006 74.8227 40.0909 77.9391 40.0909C81.0569 40.0909 83.5969 37.7006 83.5969 34.4557C83.5969 31.1909 81.0569 28.8204 77.9391 28.8204ZM77.9391 37.8728C76.2312 37.8728 74.7591 36.4644 74.7591 34.457C74.7591 32.4284 76.2325 31.0411 77.9391 31.0411C79.6471 31.0411 81.1191 32.4284 81.1191 34.457C81.1205 36.463 79.6471 37.8728 77.9391 37.8728ZM63.2608 30.5509V32.9412H68.9821C68.8112 34.2861 68.3634 35.2679 67.6797 35.9503C66.8476 36.7824 65.5451 37.7006 63.2608 37.7006C59.7389 37.7006 56.9856 34.8611 56.9856 31.3393C56.9856 27.8174 59.7389 24.9779 63.2608 24.9779C65.1608 24.9779 66.5481 25.7252 67.5723 26.6859L69.2591 24.9991C67.8281 23.6331 65.9293 22.5876 63.2608 22.5876C58.4365 22.5876 54.3806 26.5149 54.3806 31.3393C54.3806 36.1636 58.4365 40.0909 63.2608 40.0909C65.8644 40.0909 67.8294 39.2363 69.3651 37.6357C70.9445 36.0563 71.436 33.8356 71.436 32.0428C71.436 31.489 71.3936 30.9762 71.3075 30.5496H63.2608V30.5509ZM123.294 32.4072C122.825 31.1485 121.394 28.8204 118.47 28.8204C115.567 28.8204 113.154 31.1047 113.154 34.4557C113.154 37.6145 115.545 40.0909 118.747 40.0909C121.329 40.0909 122.824 38.5115 123.444 37.5933L121.522 36.312C120.882 37.2514 120.007 37.8702 118.747 37.8702C117.488 37.8702 116.591 37.2938 116.014 36.1623L123.55 33.0459L123.294 32.4072ZM115.609 34.2861C115.545 32.1078 117.296 30.9987 118.556 30.9987C119.538 30.9987 120.37 31.4903 120.648 32.1939L115.609 34.2861ZM109.483 39.7504H111.959V23.1865H109.483V39.7504ZM105.426 30.0805H105.341C104.786 29.418 103.718 28.8204 102.375 28.8204C99.5565 28.8204 96.9741 31.2969 96.9741 34.4782C96.9741 37.637 99.5565 40.0922 102.375 40.0922C103.72 40.0922 104.786 39.4946 105.341 38.8123H105.426V39.6232C105.426 41.7789 104.274 42.9317 102.417 42.9317C100.901 42.9317 99.962 41.8439 99.5777 40.9256L97.4219 41.8227C98.0407 43.3159 99.6837 45.1524 102.417 45.1524C105.32 45.1524 107.775 43.4445 107.775 39.2813V29.1636H105.428V30.0805H105.426ZM102.588 37.8728C100.88 37.8728 99.4505 36.4418 99.4505 34.4782C99.4505 32.492 100.88 31.0411 102.588 31.0411C104.274 31.0411 105.597 32.492 105.597 34.4782C105.597 36.4418 104.274 37.8728 102.588 37.8728ZM134.893 23.1865H128.969V39.7504H131.44V33.4752H134.892C137.632 33.4752 140.327 31.4916 140.327 28.3315C140.327 25.1714 137.633 23.1865 134.893 23.1865ZM134.957 31.1697H131.44V25.492H134.957C136.805 25.492 137.854 27.0224 137.854 28.3315C137.854 29.6141 136.805 31.1697 134.957 31.1697ZM150.236 28.7913C148.446 28.7913 146.593 29.5797 145.826 31.3273L148.02 32.2429C148.489 31.3273 149.363 31.0279 150.279 31.0279C151.557 31.0279 152.857 31.7951 152.878 33.1585V33.3294C152.431 33.0737 151.471 32.6908 150.3 32.6908C147.935 32.6908 145.526 33.9906 145.526 36.4193C145.526 38.636 147.466 40.0631 149.639 40.0631C151.3 40.0631 152.217 39.3171 152.792 38.4426H152.877V39.7212H155.265V33.3705C155.266 30.4316 153.069 28.7913 150.236 28.7913ZM149.937 37.8689C149.129 37.8689 147.999 37.4634 147.999 36.4617C147.999 35.1831 149.406 34.6928 150.621 34.6928C151.706 34.6928 152.219 34.9274 152.878 35.2467C152.686 36.7824 151.365 37.8689 149.937 37.8689ZM163.959 29.153L161.125 36.3345H161.04L158.099 29.153H155.436L159.847 39.1899L157.332 44.7734H159.91L166.709 29.153H163.959ZM141.692 39.7504H144.163V23.1865H141.692V39.7504Z" fill="white"/>
+              <path d="M62.8289 13.572C62.8289 14.6823 62.5003 15.5661 61.8418 16.226C61.0945 17.0104 60.1193 17.4026 58.9215 17.4026C57.774 17.4026 56.7975 17.0051 55.9959 16.2101C55.1929 15.4137 54.7915 14.4279 54.7915 13.2513C54.7915 12.0734 55.1929 11.0876 55.9959 10.2926C56.7975 9.49628 57.774 9.09878 58.9215 9.09878C59.4912 9.09878 60.0358 9.21008 60.5526 9.43135C61.0706 9.65395 61.4854 9.94943 61.7954 10.3191L61.0971 11.0187C60.5711 10.3893 59.8463 10.0753 58.9202 10.0753C58.0828 10.0753 57.3593 10.3695 56.7485 10.9578C56.1377 11.5461 55.8329 12.3106 55.8329 13.25C55.8329 14.1894 56.1377 14.954 56.7485 15.5423C57.3593 16.1306 58.0828 16.4247 58.9202 16.4247C59.8079 16.4247 60.5486 16.1292 61.1409 15.537C61.5251 15.1514 61.7477 14.6148 61.8073 13.9271H58.9202V12.9718H62.7719C62.8117 13.1798 62.8289 13.3799 62.8289 13.572Z" fill="white"/>
+              <path d="M68.9373 10.2516H65.3174V12.7718H68.5822V13.7271H65.3174V16.2472H68.9373V17.2251H64.2958V9.27508H68.9373V10.2516Z" fill="white"/>
+              <path d="M73.2447 17.2251H72.2232V10.2516H70.0024V9.27508H75.4654V10.2516H73.2447V17.2251Z" fill="white"/>
+              <path d="M79.4178 17.2251V9.27508H80.4394V17.2251H79.4178Z" fill="white"/>
+              <path d="M84.9698 17.2251H83.9482V10.2516H81.7275V9.27508H87.1905V10.2516H84.9698V17.2251Z" fill="white"/>
+              <path d="M97.5318 16.1982C96.7501 17.0011 95.7789 17.4026 94.6168 17.4026C93.4548 17.4026 92.4836 17.0011 91.7032 16.1982C90.9214 15.3952 90.5319 14.4121 90.5319 13.2501C90.5319 12.088 90.9214 11.1049 91.7032 10.3019C92.4836 9.49899 93.4548 9.09619 94.6168 9.09619C95.7722 9.09619 96.7421 9.50032 97.5265 10.3072C98.3109 11.1142 98.7031 12.0947 98.7031 13.2501C98.7031 14.4121 98.3123 15.3952 97.5318 16.1982ZM92.4571 15.5317C93.0454 16.128 93.7649 16.4248 94.6168 16.4248C95.4688 16.4248 96.1896 16.1266 96.7766 15.5317C97.3649 14.9355 97.6604 14.1749 97.6604 13.2501C97.6604 12.3252 97.3649 11.5647 96.7766 10.9684C96.1896 10.3722 95.4688 10.0754 94.6168 10.0754C93.7649 10.0754 93.0454 10.3735 92.4571 10.9684C91.8701 11.5647 91.5746 12.3252 91.5746 13.2501C91.5746 14.1749 91.8701 14.9355 92.4571 15.5317Z" fill="white"/>
+              <path d="M100.137 17.2251V9.27508H101.38L105.243 15.4589H105.287L105.243 13.9272V9.27508H106.265V17.2251H105.198L101.156 10.7405H101.112L101.156 12.2722V17.2251H100.137Z" fill="white"/>
+              <path d="M62.8289 13.572C62.8289 14.6823 62.5003 15.5661 61.8418 16.226C61.0945 17.0104 60.1193 17.4026 58.9215 17.4026C57.774 17.4026 56.7975 17.0051 55.9959 16.2101C55.1929 15.4137 54.7915 14.4279 54.7915 13.2513C54.7915 12.0734 55.1929 11.0876 55.9959 10.2926C56.7975 9.49628 57.774 9.09878 58.9215 9.09878C59.4912 9.09878 60.0358 9.21008 60.5526 9.43135C61.0706 9.65395 61.4854 9.94943 61.7954 10.3191L61.0971 11.0187C60.5711 10.3893 59.8463 10.0753 58.9202 10.0753C58.0828 10.0753 57.3593 10.3695 56.7485 10.9578C56.1377 11.5461 55.8329 12.3106 55.8329 13.25C55.8329 14.1894 56.1377 14.954 56.7485 15.5423C57.3593 16.1306 58.0828 16.4247 58.9202 16.4247C59.8079 16.4247 60.5486 16.1292 61.1409 15.537C61.5251 15.1514 61.7477 14.6148 61.8073 13.9271H58.9202V12.9718H62.7719C62.8117 13.1798 62.8289 13.3799 62.8289 13.572Z" stroke="white" stroke-width="0.240909" stroke-miterlimit="10"/>
+              <path d="M68.9373 10.2516H65.3174V12.7718H68.5822V13.7271H65.3174V16.2472H68.9373V17.2251H64.2958V9.27508H68.9373V10.2516Z" stroke="white" stroke-width="0.240909" stroke-miterlimit="10"/>
+              <path d="M73.2447 17.2251H72.2232V10.2516H70.0024V9.27508H75.4654V10.2516H73.2447V17.2251Z" stroke="white" stroke-width="0.240909" stroke-miterlimit="10"/>
+              <path d="M79.4178 17.2251V9.27508H80.4394V17.2251H79.4178Z" stroke="white" stroke-width="0.240909" stroke-miterlimit="10"/>
+              <path d="M84.9698 17.2251H83.9482V10.2516H81.7275V9.27508H87.1905V10.2516H84.9698V17.2251Z" stroke="white" stroke-width="0.240909" stroke-miterlimit="10"/>
+              <path d="M97.5318 16.1982C96.7501 17.0011 95.7789 17.4026 94.6168 17.4026C93.4548 17.4026 92.4836 17.0011 91.7032 16.1982C90.9214 15.3952 90.5319 14.4121 90.5319 13.2501C90.5319 12.088 90.9214 11.1049 91.7032 10.3019C92.4836 9.49899 93.4548 9.09619 94.6168 9.09619C95.7722 9.09619 96.7421 9.50032 97.5265 10.3072C98.3109 11.1142 98.7031 12.0947 98.7031 13.2501C98.7031 14.4121 98.3123 15.3952 97.5318 16.1982ZM92.4571 15.5317C93.0454 16.128 93.7649 16.4248 94.6168 16.4248C95.4688 16.4248 96.1896 16.1266 96.7766 15.5317C97.3649 14.9355 97.6604 14.1749 97.6604 13.2501C97.6604 12.3252 97.3649 11.5647 96.7766 10.9684C96.1896 10.3722 95.4688 10.0754 94.6168 10.0754C93.7649 10.0754 93.0454 10.3735 92.4571 10.9684C91.8701 11.5647 91.5746 12.3252 91.5746 13.2501C91.5746 14.1749 91.8701 14.9355 92.4571 15.5317Z" stroke="white" stroke-width="0.240909" stroke-miterlimit="10"/>
+              <path d="M100.137 17.2251V9.27508H101.38L105.243 15.4589H105.287L105.243 13.9272V9.27508H106.265V17.2251H105.198L101.156 10.7405H101.112L101.156 12.2722V17.2251H100.137Z" stroke="white" stroke-width="0.240909" stroke-miterlimit="10"/>
+              <g filter="url(#filter0_ii)">
+              <path d="M13.8277 9.98784C13.4421 10.3959 13.2142 11.0293 13.2142 11.8495V41.1532C13.2142 41.9747 13.4421 42.6067 13.8277 43.0148L13.9257 43.1102L30.3412 26.6948V26.5013V26.3079L13.9257 9.89111L13.8277 9.98784Z" fill="url(#paint0_linear)"/>
+              <path d="M35.8121 32.1682L30.3412 26.6946V26.5011V26.3077L35.8134 20.8354L35.9366 20.9057L42.4199 24.5892C44.2709 25.6412 44.2709 27.3624 42.4199 28.4158L35.9366 32.0993L35.8121 32.1682Z" fill="url(#paint1_linear)"/>
+              <g filter="url(#filter1_i)">
+              <path d="M35.9366 32.098L30.3398 26.5012L13.8277 43.0147C14.4372 43.6613 15.4455 43.7408 16.581 43.0968L35.9366 32.098Z" fill="url(#paint2_linear)"/>
+              </g>
+              <path d="M35.9366 20.9045L16.581 9.90697C15.4455 9.26169 14.4372 9.34252 13.8277 9.98912L30.3412 26.5026L35.9366 20.9045Z" fill="url(#paint3_linear)"/>
+              </g>
+              <path d="M6.02273 1.20455H172.852V-1.20455H6.02273V1.20455ZM177.67 6.02273V46.9773H180.08V6.02273H177.67ZM172.852 51.7955H6.02272V54.2045H172.852V51.7955ZM1.20455 46.9773V6.02273H-1.20455V46.9773H1.20455ZM6.02272 51.7955C3.36172 51.7955 1.20455 49.6383 1.20455 46.9773H-1.20455C-1.20455 50.9688 2.03121 54.2045 6.02272 54.2045V51.7955ZM177.67 46.9773C177.67 49.6383 175.513 51.7955 172.852 51.7955V54.2045C176.844 54.2045 180.08 50.9688 180.08 46.9773H177.67ZM172.852 1.20455C175.513 1.20455 177.67 3.36172 177.67 6.02273H180.08C180.08 2.03122 176.844 -1.20455 172.852 -1.20455V1.20455ZM6.02273 -1.20455C2.03121 -1.20455 -1.20455 2.03122 -1.20455 6.02273H1.20455C1.20455 3.36172 3.36172 1.20455 6.02273 1.20455V-1.20455Z" fill="#A6A6A6"/>
+              <defs>
+              <filter id="filter0_ii" x="13.2142" y="9.46167" width="30.5939" height="34.08" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="-0.180682"/>
+              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+              <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="0.180682"/>
+              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"/>
+              </filter>
+              <filter id="filter1_i" x="13.8277" y="26.5012" width="22.1089" height="17.0404" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="-0.180682"/>
+              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+              <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+              </filter>
+              <linearGradient id="paint0_linear" x1="28.8861" y1="11.5394" x2="6.6499" y2="33.7756" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00A0FF"/>
+              <stop offset="0.0066" stop-color="#00A1FF"/>
+              <stop offset="0.2601" stop-color="#00BEFF"/>
+              <stop offset="0.5122" stop-color="#00D2FF"/>
+              <stop offset="0.7604" stop-color="#00DFFF"/>
+              <stop offset="1" stop-color="#00E3FF"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear" x1="44.8294" y1="26.5012" x2="12.7698" y2="26.5012" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FFE000"/>
+              <stop offset="0.4087" stop-color="#FFBD00"/>
+              <stop offset="0.7754" stop-color="#FFA500"/>
+              <stop offset="1" stop-color="#FF9C00"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear" x1="32.8972" y1="29.5406" x2="2.74222" y2="59.6957" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF3A44"/>
+              <stop offset="1" stop-color="#C31162"/>
+              </linearGradient>
+              <linearGradient id="paint3_linear" x1="9.66905" y1="0.234204" x2="23.1341" y2="13.6993" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#32A071"/>
+              <stop offset="0.0685" stop-color="#2DA771"/>
+              <stop offset="0.4762" stop-color="#15CF74"/>
+              <stop offset="0.8009" stop-color="#06E775"/>
+              <stop offset="1" stop-color="#00F076"/>
+              </linearGradient>
+              </defs>
+              </svg>
+              
+          </a>
+
+
+
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start md:flex-row mr-20">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+
+          
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
