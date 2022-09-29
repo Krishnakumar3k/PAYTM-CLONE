@@ -1,8 +1,8 @@
 # Project-Paytm Clone HTML and Tailwind CSS
 
-![Badge]()
+![Badge](https://img.shields.io/badge/Paytm-Clone-green)
 
-# [Link of live Project]()
+# [Link of live Project](https://paytm-cloneweb.netlify.app/)
 
 ![Images](./img/landingpage.png)
 
