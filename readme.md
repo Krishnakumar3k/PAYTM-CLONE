@@ -2,7 +2,7 @@
 
 ![Badge](https://img.shields.io/badge/Paytm-Clone-green)
 
-# [Link of live Project](https://paytm-cloneweb.netlify.app/)
+# [Link of live Project](https://edpay-cloneweb.netlify.app/)
 
 ![Images](./img/landingpage.png)
 
